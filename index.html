@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Jeric Portfolio</title>
+		<link rel="stylesheet" href="style1.css">
+	</head>
+
+	<body>
+		<img src="video\yea.jpg" alt="Background Image" id="bg-image">
+
+		<div class="intro-container">
+			<h1>
+			Ramo, Jeric Y. <br> 11-Bell
+			</h1>
+
+			<h2>Introduction / Talents</h2>
+			<h3>
+				- My two main Talents are - <br>
+				-Playing "The Strongest Battlegrounds (Roblox") and Editing Cars using Davinci Resolve :D</h3>
+		</div>
+
+		<!-- SIDE-BY-SIDE SHOWCASE -->
+		<div class="showcase-container">
+			
+			<!-- LEFT BOX: TSB CLIPS (16:9 Wide Rectangle) -->
+			<div class="video-box" style="width: 462px;">
+				<h4 class="glass-text">- TSB CLIPS -</h4>
+				<video id="tsbPlayer" controls autoplay muted loop>
+					<source id="tsbSource" src="video/tsb/tsb2.mp4" type="video/mp4">
+					Your browser does not support video.
+				</video>
+				<br>
+				<button class="more-btn" onclick="nextTSB()">Next Clip ➔</button>
+			</div>
+
+			<!-- RIGHT BOX: CAR EDITS (4:3 Shorter Rectangle) -->
+			<div class="video-box" style="width: 347px;">
+				<h4 class="glass-text">- CAR EDITS -</h4>
+				<video id="editPlayer" controls autoplay muted loop>
+					<source id="editSource" src="video/edits/edit1.mp4" type="video/mp4">
+					Your browser does not support video.
+				</video>
+				<br>
+				<button class="more-btn" onclick="nextEdit()">Next Edit ➔</button>
+			</div>
+
+		</div>
+
+		<hr>
+
+		<!-- MY FAVORITE SONGS SECTION -->
+		<h2>My Favorite Songs</h2>
+
+		<div class="music-container">
+
+			<!-- SONG 1 -->
+			<div class="music-card">
+				<div class="cover-wrapper">
+					<a href="https://open.spotify.com/album/70Bn4uvWtXrBKlbttB822R" target="_blank">
+						<img src="music/songcover/cover1.jpg" class="music-cover" alt="NAPA Cover">
+						<div class="spotify-overlay">
+							<img src="video/spotifylogo.jpg" class="spotify-icon" alt="Spotify">
+						</div>
+					</a>
+				</div>
+				<div class="music-info">
+					<h3 class="music-title">Deslocado</h3>
+					<p class="music-artist">NAPA</p>
+					<audio controls loop class="custom-audio">
+						<source src="music/songs/deslocado.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+
+			<!-- SONG 2 -->
+			<div class="music-card">
+				<div class="cover-wrapper">
+					<a href="https://open.spotify.com/album/66mI9LxUO2orGDAKd5135x" target="_blank">
+						<img src="music/songcover/cover2.jpg" class="music-cover" alt=" Cover">
+						<div class="spotify-overlay">
+							<img src="video/spotifylogo.jpg" class="spotify-icon" alt="Spotify">
+						</div>
+					</a>
+				</div>
+				<div class="music-info">
+					<h3 class="music-title">Lifetime (Reimagined)</h3>
+					<p class="music-artist">Ben%Ben</p>
+					<audio controls loop class="custom-audio">
+						<source src="music/songs/Lifetime.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+
+
+			<!-- SONG 3 (Walking Back Home) -->
+			<div class="music-card">
+				<div class="cover-wrapper">
+					<a href="https://open.spotify.com/album/6CT1mfBRIKFU0mjn8YN7vS" target="_blank">
+						<img src="music/songcover/cover3.jpg" class="music-cover" alt="Walking Back Home Cover">
+						<div class="spotify-overlay">
+							<img src="video/spotifylogo.jpg" class="spotify-icon" alt="Spotify">
+						</div>
+					</a>
+				</div>
+				<div class="music-info">
+					<h3 class="music-title">Walking Back Home</h3>
+					<p class="music-artist">FUR</p>
+					<audio controls loop class="custom-audio">
+						<source src="music/songs/WalkingBackHome.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+
+			<!-- SONG 4 (Saksi ang Langit) -->
+			<div class="music-card">
+				<div class="cover-wrapper">
+					<a href="https://open.spotify.com/album/7CVVDg2G6mpYwH6B45SKuK" target="_blank">
+						<img src="music/songcover/cover4.jpg" class="music-cover" alt="Saksi Ang Langit Cover">
+						<div class="spotify-overlay">
+							<img src="video/spotifylogo.jpg" class="spotify-icon" alt="Spotify">
+						</div>
+					</a>
+				</div>
+				<div class="music-info">
+					<h3 class="music-title">Saksi ang Langit</h3>
+					<p class="music-artist">December Avenue</p>
+					<audio controls loop class="custom-audio">
+						<source src="music/songs/SaksiAngLangit.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+
+			<!-- SONG 5 (Bare Minimum) -->
+			<div class="music-card">
+				<div class="cover-wrapper">
+					<a href="https://open.spotify.com/album/7FkxoqDsyxoRZ2bGOmPPGU" target="_blank">
+						<img src="music/songcover/cover5.jpg" class="music-cover" alt="Bare Minimum Cover">
+						<div class="spotify-overlay">
+							<img src="video/spotifylogo.jpg" class="spotify-icon" alt="Spotify">
+						</div>
+					</a>
+				</div>
+				<div class="music-info">
+					<h3 class="music-title">Базовый минимум</h3>
+					<p class="music-artist">Sabi, MIA BOYKA</p>
+					<audio controls loop class="custom-audio">
+						<source src="music/songs/BareMinimum.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+
+		</div>
+
+
+		<!-- JAVASCRIPT FOR SWAPPING CLIPS -->
+		<script>
+			const tsbClips = [
+				"video/tsb/tsb1.mp4",
+				"video/tsb/tsb2.mp4",
+				"video/tsb/tsb3.mp4"
+			];
+
+			const editClips = [
+				"video/edits/edit1.mp4",
+				"video/edits/edit2.mp4",
+				"video/edits/edit3.mp4",
+				"video/edits/edit4.mp4"
+			];
+
+			let tsbIndex = 0;
+			let editIndex = 0;
+
+			function nextTSB() {
+				tsbIndex = (tsbIndex + 1) % tsbClips.length;
+				const player = document.getElementById("tsbPlayer");
+				const source = document.getElementById("tsbSource");
+				source.src = tsbClips[tsbIndex];
+				player.load();
+				player.play();
+			}
+
+			function nextEdit() {
+				editIndex = (editIndex + 1) % editClips.length;
+				const player = document.getElementById("editPlayer");
+				const source = document.getElementById("editSource");
+				source.src = editClips[editIndex];
+				player.load();
+				player.play();
+			}
+		</script>
+
+	</body>
+</html>
