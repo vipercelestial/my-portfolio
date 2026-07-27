@@ -1,0 +1,318 @@
+/* favorite theme and general setup */
+body {
+    background-color: #0b0b16;
+    color: #ffffff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 5px 5px;
+    padding-bottom: 50px;
+    border-radius: 15px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #593d83;
+    margin: 40px 0;
+}
+
+
+/* h1 styling */
+.intro-container h1 {
+    background: rgba(26, 9, 51, 0.45);
+    color: #ffffff;
+
+    text-align: center;
+    font-family: Impact, sans-serif;
+    letter-spacing: 1.5px;
+
+    padding: 18px 40px;
+    width: fit-content;
+    margin: 50px auto 20px auto;
+
+    border-radius: 30px;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    border-left: 2px solid rgba(255, 255, 255, 0.3);
+    text-shadow: 0 0 10px #CE99FF, 0 0 20px #593d83;
+}
+
+/* h3 styling */
+.intro-container h3 {
+    background: rgba(26, 9, 51, 0.45);
+    color: #CE99FF;
+
+    text-align: center;
+    width: fit-content;
+
+    padding: 12px 20px;
+    margin: 10px auto 20px auto;
+
+    border-radius: 15px;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    border-left: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* h2 styling */
+h2 {
+    text-align: center;
+    color: #CE99FF;
+    font-family: Impact, sans-serif;
+
+    padding: 10px;
+    width: fit-content;
+    margin: 10px auto 0 auto;
+    position: relative;
+
+    background: rgba(26, 9, 51, 0.45);
+    border-radius: 20px;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    border-left: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* heading underline */
+h2::after, h1::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 3px;
+    margin: 8px auto 0 auto;
+    border-radius: 15px;
+
+    background: linear-gradient(90deg, transparent, #CE99FF, transparent);
+}
+
+/* glass text styling */
+.glass-text {
+    display: inline-block;
+    color: #ffffff;
+    background: rgba(26, 9, 51, 0.35);
+    border-radius: 20px;
+    border-top: 1.5px solid rgba(255, 255, 255, 0.3);
+    border-left: 1.5px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 16px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* background image fix */
+#bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+
+    filter: blur(5px);
+    transform: scale(1.05);
+    z-index: -1;
+}
+
+/* showcase section */
+.showcase-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    gap: 40px;
+    margin: 0px auto;
+    max-width: 1100px;
+}
+
+/* video box styling */
+.video-box {
+    background: rgba(26, 9, 51, 0.50);
+    text-align: center;
+    border-radius: 30px;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    border-left: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    box-shadow: 0 0 0 rgba(206, 153, 255, 0);
+
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.video-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 24px rgba(206, 153, 255, 0.35);
+    background: rgba(26, 9, 51, 0.75);
+}
+
+/* video element styling */
+.video-box video {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 0 0 rgba(206, 153, 255, 0);
+
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease, border-radius 1s ease;
+}
+
+.video-box video:hover {
+    transform: scale(1.05);
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(206, 153, 255, 0.25);
+}
+
+.video-box h4 {
+    color: #CE99FF;
+    font-size: 1.2rem;
+    margin: 0 0 12px;
+}
+
+/* button styling */
+.more-btn {
+    background-color: rgba(26, 9, 51, 0.35);
+    color: #CE99FF;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 0 rgba(206, 153, 255, 0);
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    border-left: 2px solid rgba(255, 255, 255, 0.3);
+
+    padding: 10px 20px;
+    margin-top: 12px;
+    font-weight: bold;
+    cursor:pointer;
+
+    transition: transform 0.2s ease-out, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.more-btn:hover {
+    background: #a855f7;
+    color: #ffffff;
+    transform: scale(1.10) ;
+    box-shadow: 0 0 20px rgba(206, 153, 255, 0.45);
+}
+
+.more-btn:active {
+    transform: scale(0.95) translateY(0);
+    background-color: rgba(26, 9, 51, 0.35);
+}
+
+/* music container styling */
+.music-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.music-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    width: 480px;
+    padding: 16px;
+    border-radius: 15px;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    border-left: 2px solid rgba(255, 255, 255, 0.3);
+
+    background: rgba(26, 9, 51, 0.45);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.music-card:hover {
+    transform: scale(1.02);
+    background: rgba(26, 9, 51, 0.65);
+    box-shadow: 0 0 36px rgba(206, 153, 255, 0.22);
+}
+
+/* music cover styling */
+.music-cover {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 0 0 rgba(206, 153, 255, 0);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.music-cover:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 22px rgba(206, 153, 255, 0.35);
+}
+
+.music-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.music-title {
+    color: #ffffff;
+    font-family: Impact, sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.8px;
+    margin: 0;
+}
+
+.music-artist {
+    color: #CE99FF;
+    font-size: 0.9rem;
+    margin: 2px 0 10px 0;
+    opacity: 0.85;
+}
+
+.custom-audio {
+    width: 100%;
+    height: 32px;
+    filter: invert(0.92) hue-rotate(210deg);
+}
+
+/* album art wrapper */
+.cover-wrapper {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    border-left: 2px solid rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+}
+
+.cover-wrapper:hover .music-cover {
+    transform: scale(1.08);
+}
+
+.spotify-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease, background 0.3s ease;
+}
+
+.cover-wrapper:hover .spotify-overlay {
+    opacity: 1;
+}
+
+/* spotify icon styling */
+.spotify-icon {
+    width: 56px;
+    height: 56px;
+    box-shadow: 0 0 0 rgba(206, 153, 255, 0);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cover-wrapper:hover .spotify-icon {
+    transform: scale(1.12);
+    box-shadow: 0 0 20px rgba(206, 153, 255, 0.45);
+}
