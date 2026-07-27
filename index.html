@@ -7,6 +7,13 @@
 	</head>
 
 	<body>
+		<!-- loading overlay -->
+		<div id="loader">
+			<div class="spinner"></div>
+			<p>Loading Portfolio...</p>
+		</div>
+		
+		<!-- background img -->
 		<img src="video\yea.jpg" alt="Background Image" id="bg-image">
 
 		<div class="intro-container">
@@ -152,7 +159,6 @@
 
 		</div>
 
-
 		<!-- JAVASCRIPT FOR SWAPPING CLIPS -->
 		<script>
 			const tsbClips = [
@@ -188,6 +194,13 @@
 				player.load();
 				player.play();
 			}
+		</script>
+		
+		<script>
+			window.addEventListener("load", function() {
+				const loader = document.getElementById("loader");
+				loader.classList.add("hidden");
+			});
 		</script>
 
 	</body>
